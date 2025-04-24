@@ -1,9 +1,8 @@
-{
-  "repo_name": "defi-price-listeners",
-  "target": "Crypto / DeFi / NFT",
-  "files": {
-    "README.md": "# DeFi Price Listener Webhooks\n\nThis repo is used to simulate price event webhooks for DeFi applications, NFT floor price alerts, and trading bot integrations.\n\n```bash\ncurl -X POST https://hooks.zapier.com/hooks/catch/22459586/2xpj9rh/ \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"token\":\"ETH\",\"event\":\"price_above_threshold\",\"value\":\"3100\"}'\n```\n\n## Webhook URL:\n`https://hooks.zapier.com/hooks/catch/22459586/2xpj9rh/`\n\n## Payload Example:\n```json\n{\n  \"token\": \"ETH\",\n  \"event\": \"price_above_threshold\",\n  \"value\": \"3100\"\n}\n```",
-    ".env": "TOKEN=ETH\nWEBHOOK_URL=https://hooks.zapier.com/hooks/catch/22459586/2xpj9rh/\nTHRESHOLD=3100\nALERT_TYPE=price_above_threshold"
-  }
-}
+# DeFi Price Listener Webhooks
 
+This repo is used to simulate price event webhooks for DeFi applications, NFT floor price alerts, and trading bot integrations.
+
+```bash
+curl -X POST https://hooks.zapier.com/hooks/catch/22459586/2xpj9rh/ \
+  -H "Content-Type: application/json" \
+  -d '{"token":"ETH","event":"price_above_threshold","value":"3100"}'
